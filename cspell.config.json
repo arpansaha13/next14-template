@@ -1,0 +1,74 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "languageSettings": [
+    {
+      "languageId": [
+        "javascript",
+        "typescript"
+      ],
+      "includeRegExpList": [
+        "strings",
+        "CStyleComment"
+      ]
+    }
+  ],
+  "words": [
+    "arpansaha",
+    "headlessui",
+    "heroicons",
+    "preinstall",
+    "tailwindcss"
+  ],
+  "patterns": [
+    {
+      "name": "Markdown links",
+      "pattern": "\\((.*)\\)"
+    },
+    {
+      "name": "Markdown code blocks",
+      "pattern": "/^(\\s*`{3,}).*[\\s\\S]*?^\\1/gmx"
+    },
+    {
+      "name": "Inline code blocks",
+      "pattern": "\\`([^\\`\\r\\n]+?)\\`"
+    },
+    {
+      "name": "Link contents",
+      "pattern": "\\<a(.*)\\>"
+    },
+    {
+      "name": "Snippet references",
+      "pattern": "-- snippet:(.*)"
+    },
+    {
+      "name": "Snippet references 2",
+      "pattern": "\\<\\[sample:(.*)"
+    },
+    {
+      "name": "Multi-line code blocks",
+      "pattern": "/^\\s*```[\\s\\S]*?^\\s*```/gm"
+    },
+    {
+      "name": "HTML Tags",
+      "pattern": "<[^>]*>"
+    }
+  ],
+  "ignoreRegExpList": [
+    "Markdown links",
+    "Markdown code blocks",
+    "Inline code blocks",
+    "Link contents",
+    "Snippet references",
+    "Snippet references 2",
+    "Multi-line code blocks",
+    "HTML Tags"
+  ],
+  "ignorePaths": [
+    ".prettierrc",
+    "pnpm-lock.yaml"
+  ],
+  "useGitignore": true,
+  "caseSensitive": false,
+  "allowCompoundWords": false
+}

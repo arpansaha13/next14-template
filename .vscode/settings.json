@@ -2,4 +2,5 @@
   "prettier.enable": true,
   "prettier.requireConfig": true,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": false
 }
