@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import { Nav } from '~/components/navbar/Nav'
+import { StoreProvider } from './StoreProvider'
+import '~/styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Next14 Template',
@@ -14,7 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Do not apply spacing styles on body */}
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <StoreProvider>
+          <Nav />
+          {children}
+        </StoreProvider>
+      </body>
     </html>
   )
 }

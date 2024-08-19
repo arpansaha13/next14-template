@@ -1,5 +1,10 @@
-export default function Page() {
-  return (
-    <div>Next 14 template</div>
-  )
+import type { Metadata } from 'next'
+import { Counter } from '~/components/counter/Counter'
+
+export default function IndexPage() {
+  return <Counter />
+}
+
+export const metadata: Metadata = {
+  title: 'Redux Toolkit',
 }

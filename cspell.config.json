@@ -18,6 +18,7 @@
     "headlessui",
     "heroicons",
     "preinstall",
+    "reduxjs",
     "tailwindcss"
   ],
   "patterns": [
