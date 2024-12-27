@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Opinionated Next.js Starter Template
 
-## Getting Started
+## Pre-packed with
 
-First, run the development server:
+- [Next.js](https://nextjs.org/) - The React Framework for the Web.
+- [ReactUse](https://www.reactuse.com) - A comprehensive collection of custom React Hooks.
+- [Redux Toolkit](https://redux-toolkit.js.org/) - The official, opinionated, batteries-included toolset for efficient Redux development.
+- [TailwindCSS](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
+- [Headless UI](https://headlessui.com/) - Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
+
+## Tailwind Plugins
+
+These tailwind plugins are pre-packed in this template.
+
+- [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms) - A basic reset for form styles.
+- [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography) - Beautiful typographic defaults for HTML you don't control.
+
+## Other Features
+
+- [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager.
+- [Prettier](https://prettier.io/) - Opinionated code formatter.
+- [TypeScript](https://www.typescriptlang.org/) - Why not?
+
+## Setup
+
+Make sure to install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server on http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+pnpm dev
+```
 
-## Learn More
+## Production
 
-To learn more about Next.js, take a look at the following resources:
+Build the application for production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Locally preview production build:
 
-## Deploy on Vercel
+```bash
+pnpm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out the [deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Checklist
+
+When you use this template, try to follow the checklist to update your info properly
+
+- [ ] Remove example components and store slices
+- [ ] Clean up the READMEs and remove routes
+- [ ] Clean up the images in `public/`
